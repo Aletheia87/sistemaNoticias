@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<title>Sistema de Noticias</title>
+</head>
+<body>
+	<h1 class="text-center">Sistema de Noticias</h1>
+
+
+	<div class="container m-3">
+		<table class="table table-secondary table-bordered border-light mt-5">
+
+			<tbody>
+				<tr>
+					<td><img width="220px" alt="Noticia1" th:src="${noticia1.url}" />
+						<h2 th:text="${noticia1.titular}"></h2>
+						<p th:text="${noticia1.cuerpo}" /></td>
+					<td><img width="220px" alt="Noticia2" th:src="${noticia2.url}" />
+						<h2 th:text="${noticia2.titular}"></h2>
+						<p th:text="${noticia2.cuerpo}" /></td>
+					<td><img width="220px" alt="Noticia3" th:src="${noticia3.url}" />
+						<h2 th:text="${noticia3.titular}"></h2>
+						<p th:text="${noticia3.cuerpo}" /></td>
+					<td><img width="220px" alt="Noticia4" th:src="${noticia4.url}" />
+						<h2 th:text="${noticia4.titular}"></h2>
+						<p th:text="${noticia4.cuerpo}" /></td>
+					<td><img width="220px" alt="Noticia5" th:src="${noticia5.url}" />
+						<h2 th:text="${noticia5.titular}"></h2>
+						<p th:text="${noticia5.cuerpo}" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
